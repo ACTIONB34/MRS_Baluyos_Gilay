@@ -45,8 +45,13 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="pages/portfolio.html">Movies</a></li>
-          <li><a href="pages/services.html">Reservations</a></li>
+          <li class="drop-down"><a href="">Movies</a>
+            <ul>
+              <li><a href="pages/movies.html">View All Movies</a></li>
+              <li><a href="pages/nowshowing.html">Now Showing</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/reservations.html">Reservations</a></li>
           <li><a href="pages/about.html">About</a></li>
 
         </ul>
@@ -126,137 +131,19 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3> Book your screening and special events at  <span>Cinema World</span>!</h3>
-            <p> Some text here etc hahaha idk unsa man lorep .</p>
+            <p> Click on View Now Showing to see what's on.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Book now!</a>
+            <!-- <a class="cta-btn align-middle" href="pages/reservations.html">Book now</a> -->
+            <a class="cta-btn align-middle" href="pages/nowshowing.html">View now showing</a>
           </div>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2><strong>Now Showing</strong></h2>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Cinema 1</li>
-              <li data-filter=".filter-card">Cinema 2</li>
-              <li data-filter=".filter-web">Cinema 3</li>
-              <li data-filter=".filter-app">Cinema 4</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Onward</h4>
-              <p>Directed by: Dan Scanlon <br>
-              Starring: Tom Holland, Chris Pratt, Octavia Spencer, Julia Louis-Dreyfus</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/movies/onward.webp" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-
     <!-- ======= Coming Soon Section ======= -->
-    <section id="services" class="cta">
+    <section id="services" class="s">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -267,7 +154,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/coming/sonic.jpg" class="img-fluid" alt="">
-              <h4 class="title">Sonic the Hedgehog</h4>
+              <h5 class="title">Sonic the Hedgehog</h5>
               <p class="description">Directed by: Jeff Fowler <br>
                 Starring: James Marsden, Ben Schwartz, Jim Carrey, Tika Sumpter, Neal McDonough <br>
                 Opening on: February 14, 2020</p>
@@ -276,7 +163,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <img src="assets/img/coming/sonic.jpg" class="img-fluid" alt="">
-              <h4 class="title">Sonic the Hedgehog</h4>
+              <h5 class="title">Sonic the Hedgehog</h5>
               <p class="description">Directed by: Jeff Fowler <br>
                 Starring: James Marsden, Ben Schwartz, Jim Carrey, Tika Sumpter, Neal McDonough <br>
                 Opening on: February 14, 2020</p>
@@ -285,7 +172,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/coming/sonic.jpg" class="img-fluid" alt="">
-              <h4 class="title">Sonic the Hedgehog</h4>
+              <h5 class="title">Sonic the Hedgehog</h5>
               <p class="description">Directed by: Jeff Fowler <br>
                 Starring: James Marsden, Ben Schwartz, Jim Carrey, Tika Sumpter, Neal McDonough <br>
                 Opening on: February 14, 2020</p>
@@ -294,7 +181,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/coming/sonic.jpg" class="img-fluid" alt="">
-              <h4 class="title">Sonic the Hedgehog </h4>
+              <h5 class="title">Sonic the Hedgehog </h5>
               <p class="description">Directed by: Jeff Fowler <br>
                 Starring: James Marsden, Ben Schwartz, Jim Carrey, Tika Sumpter, Neal McDonough <br>
                 Opening on: February 14, 2020</p>
