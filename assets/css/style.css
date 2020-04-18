@@ -1027,7 +1027,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features {
-  padding-top: 0;
+  padding-top: 10;
 }
 
 .features .nav-tabs {
@@ -2206,3 +2206,29 @@ New Styles--------------------------*/
   cursor: pointer;
   text-align: center;
 }
+
+.smallBox::before
+{
+  content:".";
+  width:15px;
+  height:15px;
+  float:left;
+  margin-right:10px;
+}
+.greenBox::before
+{
+  content:"";
+  background:Green;
+}
+.redBox::before
+{
+  content:"";
+  background:Red;
+}
+.emptyBox::before
+{
+  content="";
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
