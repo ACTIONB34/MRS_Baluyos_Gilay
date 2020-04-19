@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Reservation - Cinemaworld</title>
+	<meta content="" name="descriptison">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="../assets/img/favicon.png" rel="icon">
+	<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+	<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+	<link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+	<link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header">
+		<div class="container d-flex">
+
+			<div class="logo mr-auto">
+				<h1 class="text-light"><a href="index.html">CINEMAWORLD</a></h1>
+			</div>
+
+			<nav class="nav-menu d-none d-lg-block">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li class="drop-down"><a href="">Movies</a>
+						<ul>
+							<li><a href="movies.html">View All Movies</a></li>
+							<li><a href="nowshowing.html">Now Showing</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="reservations.html">Reservations</a></li>
+					<li><a href="about.html">About</a></li>
+
+				</ul>
+			</nav>
+			<!-- .nav-menu -->
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<main id="main">
+
+		<!-- ======= Breadcrumbs ======= -->
+		<section id="breadcrumbs" class="breadcrumbs">
+			<div class="container">
+
+				<div class="d-flex justify-content-between align-items-center">
+					<h2>Seat Reservations</h2>
+					<ol>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="nowshowing.html">Movies</a></li>
+						<li>Reservations</li>
+					</ol>
+				</div>
+
+			</div>
+		</section>
+		<!-- End Breadcrumbs -->
+
+		<!-- ======= Features Section ======= -->
+		<section id="features" class="features">
+			<div class="container">
+
+				<div class="section-title" data-aos="fade-up">
+					<h2>Seat Selection</h2>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 ml-auto" data-aos="fade-left" data-aos-delay="100">
+						
+						<div class="seatStructure">
+							<center>
+								<table id="seatsBlock">
+									<p id="notification"></p>
+									<tr>
+										<td colspan="20">
+											<div class="screen">SCREEN</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td></td>
+										<td>1</td>
+										<td>2</td>
+										<td>3</td>
+										<td>4</td>
+										<td>5</td>
+										<td>6</td>
+										<td>7</td>
+										<td>8</td>
+
+									</tr>
+
+									<tr>
+										<td>A</td>
+										<td>
+											<input type="checkbox" class="seats" value="A1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="A8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>B</td>
+										<td>
+											<input type="checkbox" class="seats" value="B1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="B8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>C</td>
+										<td>
+											<input type="checkbox" class="seats" value="C1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="C8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>D</td>
+										<td>
+											<input type="checkbox" class="seats" value="D1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="D8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>E</td>
+										<td>
+											<input type="checkbox" class="seats" value="E1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="E8">
+										</td>								
+									</tr>
+
+									<tr class="seatVGap"></tr>
+
+									<tr>
+										<td>F</td>
+										<td>
+											<input type="checkbox" class="seats" value="F1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="F8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>G</td>
+										<td>
+											<input type="checkbox" class="seats" value="G1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="G8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>H</td>
+										<td>
+											<input type="checkbox" class="seats" value="H1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="H8">
+										</td>
+									</tr>
+
+									<tr>
+										<td>I</td>
+										<td>
+											<input type="checkbox" class="seats" value="I1">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I2">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I3">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I4">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I5">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I6">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I7">
+										</td>
+										<td>
+											<input type="checkbox" class="seats" value="I8">
+										</td>
+									</tr>
+
+								</table>
+
+								<br/>
+								<button class="confirm-btn"> Confirm Seat Selection </button> </p>
+							</center>
+						</div>
+						
+					</div>
+
+					<div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">	
+						<div class="inputForm">
+							<div class="smallBox greenBox">Selected Seat</div>
+							<div class="smallBox redBox">Reserved Seat</div>
+							<div class="smallBox emptyBox">Empty Seat</div>
+							<br>				
+
+							<p> <strong> Movie: </strong> Onward <br>
+								<strong> Time: </strong> April 26, 2020 1:00 PM<br>
+								<strong> Tickets: </strong> 8 <br>
+								<strong> Total: </strong> P 800.00<br>
+								<strong> Seats: </strong> A1, A2, A3, A4, B1, B2, B3, B4 </p>
+							
+							<button class="confirm-btn block"> Confirm </button> 
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End Features Section -->
+
+	</main>
+	<!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+
+		<div class="container d-md-flex py-4">
+
+			<div class="mr-md-auto text-center text-md-left">
+				<div class="copyright">
+					Web Programming Exercise
+				</div>
+				<div class="credits">
+					Created by <strong>Baluyos & Gilay</strong>
+				</div>
+			</div>
+			<div class="social-links text-center text-md-right pt-3 pt-md-0">
+				<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+				<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+				<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+				<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+				<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="../assets/vendor/php-email-form/validate.js"></script>
+	<script src="../assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+	<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="../assets/vendor/venobox/venobox.min.js"></script>
+	<script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="../assets/vendor/aos/aos.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
