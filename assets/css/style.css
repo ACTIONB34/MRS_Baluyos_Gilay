@@ -1873,7 +1873,7 @@ section {
 
 .blog .sidebar {
   padding: 30px;
-  margin: 0 0 60px 20px;
+  margin: 0 0 30px 20px;
   background: #f8f6f5;
 }
 
@@ -2206,28 +2206,78 @@ New Styles--------------------------*/
   text-align: center;
 }
 
-.smallBox::before
-{
+.smallBox::before {
   content:".";
   width:15px;
   height:15px;
   float:left;
   margin-right:10px;
 }
-.greenBox::before
-{
+
+.greenBox::before {
   content:"";
   background:Green;
 }
-.redBox::before
-{
+
+.redBox::before {
   content:"";
   background:Red;
 }
-.emptyBox::before
-{
+
+.emptyBox::before {
   content="";
   box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
     background-color:#ccc;
 }
 
+/*seats*/
+
+.table-seats {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 5px;
+    /*padding-right: 50px;*/
+}
+
+.seats {
+    width: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 7px;
+    height: 24px;
+}
+
+.seatVGap {
+  height:40px;
+}
+
+table {
+  text-align:center;
+}
+
+input[type=checkbox] {
+    width:0px;
+    margin-right:18px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+input[type=checkbox]:checked:before {
+    background-color:Green;
+    font-size: 15px;
+}
+
+.img-center {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
