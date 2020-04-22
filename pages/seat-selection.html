@@ -42,13 +42,13 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li class="drop-down"><a href="">Movies</a>
+                    <li class="drop-down active"><a href="">Movies</a>
                         <ul>
                             <li><a href="movies.html">View All Movies</a></li>
                             <li><a href="nowshowing.html">Now Showing</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="reservations.html">Reservations</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="about.html">About</a></li>
 
                 </ul>
@@ -82,13 +82,13 @@
         <section id="blog" class="blog">
 
             <div class="container">
-                <div class="section-title center" data-aos="fade-up">
+                <div class="section-title center">
                     <h2>Seat Selection</h2>
                 </div>
 
                 <div class="row">
 
-                    <div class="col-lg-8 ml-auto" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-lg-8 ml-auto">
 
                         <div class="seatStructure" style="padding:0px">
                             <center>
@@ -414,18 +414,24 @@
 
                     </div>
 
-                    <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                     	<br>
-						<div class="sidebar" data-aos="fade-left">
-	                    	
-	                        		<h6> Legend </h6>
-	                        		<div class="smallBox greenBox">Selected Seat</div>
-									<div class="smallBox redBox">Reserved Seat</div>
-									<div class="smallBox emptyBox">Empty Seat</div>
+						<div class="sidebar">
+	                        		<h6><strong> Time Available </strong></h6>
+									<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">8:00 PM
+									  </label>
+									</div>
+									<div class="form-check">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">11:00 PM
+									  </label>
+									</div>
 						
 						</div>
 
-                        <div class="sidebar" data-aos="fade-left">
+                        <div class="sidebar">
                             <h4>Ticket Information</h4>
                             <hr>
                            
@@ -433,7 +439,9 @@
                             <br>
                             Cinema: <strong> 1 </strong>
                             <br>
-                            Time: <strong> April 26, 2020 1:00 PM </strong>
+                            Date: <strong> April 26, 2020</strong>
+                            <br>
+                            Time: <strong> 8:00 PM </strong>
                             <br>
                             Tickets: <strong> 8 </strong>
                             <br>
@@ -443,7 +451,7 @@
                             <br>
                             <br>
 
-                            <a class="confirm-btn block" href="checkout.html">Checkout</a>
+                            <a class="confirm-btn block" href="checkout.html">Confirm Reservation</a>
                         </div>
                     </div>
                 </div>

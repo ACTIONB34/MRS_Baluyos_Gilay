@@ -2281,3 +2281,50 @@ input[type=checkbox]:checked:before {
   height: 100%;
   width: 100%;
 }
+
+.box {
+   object-fit: cover;
+  height: 350px;
+  width: 350px;
+}
+
+.box2 {
+  object-fit: cover;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
+
+/* Reservation Page*/
+#reserve-flters {
+  padding: 0;
+  margin: 0 auto 10px auto;
+  list-style: none;
+
+}
+
+
+#reserve-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #4d4643;
+  transition: all 0.3s;
+  border-radius: 50px;
+}
+
+#reserve-flters li:hover, #reserve-flters li.filter-active {
+  color: #fff;
+  background: #f03c02;
+}
+
+#reserve-flters li:last-child {
+  margin-right: 0;
+}
