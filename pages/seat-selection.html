@@ -451,12 +451,36 @@
                             <br>
                             <br>
 
-                            <a class="confirm-btn block" href="checkout.html">Confirm Reservation</a>
+                            <button class="confirm-btn block" data-toggle="modal" data-target="#confirm_modal">Confirm Reservation</button>
                         </div>
                     </div>
                 </div>
         </section>
         <!-- End Features Section -->
+        <div class="modal" id="confirm_modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Confirm Reservation</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Are you sure you want to proceed with this reservation?
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a type="button" class="confirm-btn" href="checkout.html">Confirm</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+        
+                </div>
+            </div>
+        </div>
 
     </main>
     <!-- End #main -->
