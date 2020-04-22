@@ -86,8 +86,9 @@
 					<h2> All Reservations </h2>
 						<ul id="reserve-flters">
 							<li data-filter="*" class="filter-active">All</li>
-							<li data-filter=".filter-cinema1">Cancelled</li>
-							<li data-filter=".filter-cinema2">Done</li>
+							<li data-filter=".filter-cinema1">Today</li>
+							<li data-filter=".filter-cinema2">This Week</li>
+							<li data-filter=".filter-cinema2">Cancelled</li>
 						</ul>
 				
 				</div>
@@ -95,6 +96,7 @@
 				<table class="table table-hover">
 					<thead>
 						<tr>
+							<th></th>
 							<th>Ticket #</th>
 							<th>Date Booked</th>
 							<th>Movie</th>
@@ -103,11 +105,15 @@
 							<th>Ticket</th>
 							<th>Seat Numbers</th>
 							<th>Status</th>
-							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
+							<td>
+								<div class="social-links text-center text-md-right pt-3 pt-md-0">
+									<a href="checkout.html" class="linkedin"><i class="icofont-look"></i></a>									
+									<a href="#" class="linkedin"><i class="icofont-ui-delete"></i></a>
+								</div></td>
 							<td>001</td>
 							<td>04-26-2020</td>
 							<td>Onward</td>
@@ -116,13 +122,14 @@
 							<td>8</td>
 							<td>A1, A2, A3, A4, B1, B2, B3, B4</td>
 							<td>Ok</td>
+							
+						</tr>
+						<tr>
 							<td>
 								<div class="social-links text-center text-md-right pt-3 pt-md-0">
 									<a href="checkout.html" class="linkedin"><i class="icofont-look"></i></a>									
 									<a href="#" class="linkedin"><i class="icofont-ui-delete"></i></a>
 								</div></td>
-						</tr>
-						<tr>
 							<td>002</td>
 							<td>04-26-2020</td>
 							<td>Mulan</td>
@@ -131,13 +138,13 @@
 							<td>2</td>
 							<td>A1, A2</td>
 							<td>Cancelled</td>
+						</tr>
+						<tr>
 							<td>
 								<div class="social-links text-center text-md-right pt-3 pt-md-0">
 									<a href="checkout.html" class="linkedin"><i class="icofont-look"></i></a>									
 									<a href="#" class="linkedin"><i class="icofont-ui-delete"></i></a>
 								</div></td>
-						</tr>
-						<tr>
 							<td>003 </td>
 							<td>04-27-2020</td>
 							<td>Mulan</td>
@@ -146,11 +153,6 @@
 							<td>2</td>
 							<td>A1, A2</td>
 							<td>Cancelled</td>
-							<td>
-								<div class="social-links text-center text-md-right pt-3 pt-md-0">
-									<a href="checkout.html" class="linkedin"><i class="icofont-look"></i></a>									
-									<a href="#" class="linkedin"><i class="icofont-ui-delete"></i></a>
-								</div></td>
 						</tr>
 					</tbody>
 				</table>
