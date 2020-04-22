@@ -2238,7 +2238,6 @@ New Styles--------------------------*/
     border-spacing: 5px;
     /*padding-right: 50px;*/
 }
-
 .seats {
     width: 40px;
     font-weight: 600;
@@ -2267,13 +2266,13 @@ input[type=checkbox]:before {
     display: inline-block;
     vertical-align:middle;
     text-align: center;
-    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-    background-color:#ccc;
+    background-image: url('../img/movie_seat.png');
+    background-size: cover;
 }
 
 input[type=checkbox]:checked:before {
-    background-color:Green;
-    font-size: 15px;
+    background-image: url('../img/movie_seat_green.png');
+    background-size: cover;
 }
 
 .img-center {
