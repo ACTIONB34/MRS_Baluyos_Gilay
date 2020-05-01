@@ -28,12 +28,6 @@
 	<!-- Template Main CSS File -->
 	<link href="../assets/css/style.css" rel="stylesheet">
 
-	<!-- =======================================================
-  * Template Name: Flattern - v2.0.0
-  * Template URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -46,20 +40,14 @@
 				<h1 class="text-light"><a href="index.html">CINEMAWORLD</a></h1>
 			</div>
 
-			<nav class="nav-menu d-none d-lg-block">
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li class="drop-down active"><a href="">Movies</a>
-						<ul>
-							<li><a href="movies.html">View All Movies</a></li>
-							<li><a href="nowshowing.html">Now Showing</a></li>
-						</ul>
-					</li>
-					<li><a href="reservations.html">Reservations</a></li>
-					<li><a href="about.html">About</a></li>
-
-				</ul>
-			</nav>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="active"><a href="nowshowing.html">Now Showing</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
 			<!-- .nav-menu -->
 
 		</div>
@@ -89,26 +77,28 @@
 
 				<div class="section-title">
 					<h2><strong>Now Showing</strong></h2>
-					<label for="moviedate">Movies available for: </label>
+					<!-- <label for="moviedate">Movies available for: </label>
 					<input type="date" name="date" value="2020-04-25">
-					<input class="confirm-btn" type="button" value="Confirm" onclick="msg()">
+					<input class="confirm-btn" type="button" value="Confirm" onclick="msg()"> -->
+					<p> Select movie to see details </p>
 				</div>
 
 				<div class="row">
 					<div class="col-lg-12 d-flex justify-content-center">
 						<ul id="portfolio-flters">
 							<li data-filter="*" class="filter-active">All</li>
-							<li data-filter=".filter-cinema1">Cinema 1</li>
-							<li data-filter=".filter-cinema2">Cinema 2</li>
-							<li data-filter=".filter-cinema3">Cinema 3</li>
-							<li data-filter=".filter-cinema4">Cinema 4</li>
+							<li data-filter=".1">Cinema 1</li>
+							<li data-filter=".2">Cinema 2</li>
+							<li data-filter=".3">Cinema 3</li>
+							<li data-filter=".4">Cinema 4</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="row portfolio-container">
+				<!-- movies here -->
+				<div class="row portfolio-container" id="nowshowing">
 
-					<div class="col-lg-4 col-md-6 portfolio-item filter-cinema1">
+					<!-- <div class="col-lg-4 col-md-6 portfolio-item filter-cinema1">
 						<a href="movie-details.html" class="details-link" title="Reserve">
 							<img src="../assets/img/movies/onward.webp" class="img-fluid box" alt="">
 						</a>
@@ -186,8 +176,16 @@
 								<br> Starring: Gal Gadot, Chris Pine, Kristen Wiig</p>
 						</div>
 					</div>
-
+ -->
 				</div>
+
+				<div class="container">
+					<p id="movie" style="text-align: left"> </p> 
+				<!-- 	<a href="seat-selection.html">
+						<button class="confirm-btn" id="selectMovie">
+						 Proceed to Seat Selection </button>
+					</a> -->
+				</div>	
 
 			</div>
 		</section>
@@ -236,6 +234,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/script.js"></script>
 
 </body>
 

@@ -42,15 +42,9 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li class="drop-down active"><a href="">Movies</a>
-                        <ul>
-                            <li><a href="movies.html">View All Movies</a></li>
-                            <li><a href="nowshowing.html">Now Showing</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="nowshowing.html">Now Showing</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="about.html">About</a></li>
-
                 </ul>
             </nav>
             <!-- .nav-menu -->
@@ -69,7 +63,7 @@
                     <h2>Seat Reservations</h2>
                     <ol>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="nowshowing.html">Movies</a></li>
+                        <li><a href="nowshowing.html">Now Showing</a></li>
                         <li>Seat Selection</li>
                     </ol>
                 </div>
@@ -416,8 +410,8 @@
 
                     <div class="col-lg-4 mb-5 mb-lg-0">
                     	<br>
-						<div class="sidebar">
-	                        		<h6><strong> Time Available </strong></h6>
+				<!-- 		<div class="sidebar">
+	                        		<h6><strong> Date Reservation </strong></h6>
 									<div class="form-check">
 									  <label class="form-check-label">
 									    <input type="radio" class="form-check-input" name="optradio">8:00 PM
@@ -428,17 +422,12 @@
 									    <input type="radio" class="form-check-input" name="optradio">11:00 PM
 									  </label>
 									</div>
-						
-						</div>
+						</div> -->
 
                         <div class="sidebar">
                             <h4>Ticket Information</h4>
                             <hr>
                            
-                            <p> Movie: <strong> Onward </strong> 
-                            <br>
-                            Cinema: <strong> 1 </strong>
-                            <br>
                             Date: <strong> April 26, 2020</strong>
                             <br>
                             Time: <strong> 8:00 PM </strong>
@@ -451,6 +440,7 @@
                             <br>
                             <br>
 
+                            <a class="confirm-btn block" href="nowshowing.html">Back</a>
                             <button class="confirm-btn block" data-toggle="modal" data-target="#confirm_modal">Confirm Reservation</button>
                         </div>
                     </div>
@@ -474,8 +464,8 @@
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <a type="button" class="confirm-btn" href="checkout.html">Confirm</a>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          <a type="button" class="confirm-btn" href="checkout.html" id="addReservation()">Confirm</a>
+          <button type="button" class="confirm-btn" data-dismiss="modal">Cancel</button>
         </div>
         
                 </div>
