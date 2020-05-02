@@ -188,7 +188,7 @@ function showMovie(title) {
 
 			console.log(movie);
 
- 			document.getElementById("showingdetails").innerHTML =
+			document.getElementById("showingdetails").innerHTML =
 
 
 															"<div class=\"modal fade\" id=\"myModal2\" role=\"dialog\">" +
@@ -196,7 +196,7 @@ function showMovie(title) {
 																														   
 																	"<div class=\"modal-content\">" +
 																		"<div class=\"modal-header\">" +
-																			"<h4 class=\"modal-title\">"+ movie.title + "</h4>" +
+																			"<h4 class=\"modal-title\" id=\"movieTitle\" value=\""+ movie.title + "\">"+ movie.title + "</h4>" +
 																			"<button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>" +
 																		"</div>" +
 
@@ -212,7 +212,7 @@ function showMovie(title) {
 																		"</div>" +
 																	   
 																		"<div class=\"modal-footer\">" +
-																			"<a href=\"seat-selection.html\">" +
+																			"<a href=\"seat-selection.html\" onclick=\"selectMovie('" + movie.title + "')\">" +
 																				"<button class=\"confirm-btn vertical-center\" id=\"thisMovie('" + movie.title + "')\">" +
 																					"Proceed</button>" +
 																			"</a>" +
@@ -227,7 +227,7 @@ function showMovie(title) {
 
 	}
 
-
+// seat-selection.html
 	// document.getElementById("selectedMovieImage").innerHTML = "<img src=\"" + movie.image + "\">";
 
 	// document.getElementById("selectedMovieDetails").innerHTML = "<h2>Onwards</h2> "+
@@ -247,7 +247,6 @@ function showMovie(title) {
 
 
 }
-
 
 
 // next picture data
@@ -299,49 +298,64 @@ if(document.getElementById("soon") != null){
 	};
 }
 
+
+
+function selectMovie(movie) {
+	console.log("Movie: " + movie + " is stored to reservations.");
+	return movie;
+	
+}
+
+document.getElementById("ticketinfo").innerHTML += "<h4>Ticket Information</h4><hr>" +
+													"<strong>Tickets: </strong> " + "Number of Seats" + "<br>" +
+													"<strong>Seats selected: </strong>" + "Seats selected" + "</p><hr>" +
+													"<strong>Total:</strong> P " + "Total Amount" + "<br> <br>"+
+                            						"<button class=\"confirm-btn block\" data-toggle=\"modal\" data-target=\"#confirm_modal\">Proceed</button>";
+
+
 // for reservation
-// var reservations = [];
+var reservations = [];
 
-// if(!localStorage.getItem("reserve")){
-// 		localStorage.setItem("reserve",JSON.stringify(reservations));
-// 	}
+if(!localStorage.getItem("reserve")){
+		localStorage.setItem("reserve",JSON.stringify(reservations));
+	}
 
-// var reservation = JSON.parse(localStorage.getItem("reserve"));
-// var table = document.getElementById("reservationTable");
+var reservation = JSON.parse(localStorage.getItem("reserve"));
+var table = document.getElementById("reservationTable");
 
-// 	for (var i = 0;i < reservation.length; i++) {
-// 		table.innerHTML += 
-// 					"<tr>" +
-// 						"<td>" +
-// 							"<div class=\"social-links text-center text-md-right pt-3 pt-md-0\">" +
-// 								"<a href=\"checkout.html\" class=\"linkedin\"><i class=\"icofont-look\"></i></a> " +									
-// 								"<a href=\"#\" class=\"linkedin\"><i class=\"icofont-ui-delete\"></i></a> "+
-// 							"</div></td> " +
-// 						"<td>" + reservation[i].id + "<\/td>" +
-// 						"<td>" + reservation[i].dateBooked + "<\/td>" +
-// 						"<td>" + reservation[i].movie + "<\/td>" +
-// 						"<td>" + reservation[i].cinema + "<\/td>" +
-// 						"<td>" + reservation[i].time + "<\/td>" +
-// 						"<td>" + reservation[i].ticket + "<\/td>" +
-// 						"<td>" + reservation[i].seatNumber + "<\/td>" +
-// 						"<td>" + reservation[i].status + "<\/td>" 
+	for (var i = 0;i < reservation.length; i++) {
+		table.innerHTML += 
+					"<tr>" +
+						"<td>" +
+							"<div class=\"social-links text-center text-md-right pt-3 pt-md-0\">" +
+								"<a href=\"checkout.html\" class=\"linkedin\"><i class=\"icofont-look\"></i></a> " +									
+								"<a href=\"#\" class=\"linkedin\"><i class=\"icofont-ui-delete\"></i></a> "+
+							"</div></td> " +
+						"<td>" + reservation[i].id + "<\/td>" +
+						"<td>" + reservation[i].dateBooked + "<\/td>" +
+						"<td>" + reservation[i].movie + "<\/td>" +
+						"<td>" + reservation[i].cinema + "<\/td>" +
+						"<td>" + reservation[i].time + "<\/td>" +
+						"<td>" + reservation[i].ticket + "<\/td>" +
+						"<td>" + reservation[i].seatNumber + "<\/td>" +
+						"<td>" + reservation[i].status + "<\/td>" 
 							
-// 						"</tr>"
-// 	}
-// var smove =  JSON.parse(localStorage.getItem("reserve"));
-// localStorage.setItem("reserve",JSON.stringify(smove));
+						"</tr>"
+	}
+var smove =  JSON.parse(localStorage.getItem("reserve"));
+localStorage.setItem("reserve",JSON.stringify(smove));
 
-// function addReservation(){
+function addReservation(){
 
-// 	var reservations =
-// 		{
-// 			id: ++(reservations.length),
-// 			dateBooked: document.getElementById("thisMovie").value,
-// 			movieID: document.getElementById().value,
-// 			ticket: document.getElementById().value,
-// 			seatNumber: document.getElementById().value,
-// 			status: document.getElementById().value
-// 		};
+	var reservations =
+		{
+			id: ++(reservations.length),
+			movie: document.getElementById("movieTitle").value
+		};
 
+	var smove =  JSON.parse(localStorage.getItem("reserve"));
+	smove.push(reservations);
+	localStorage.setItem("reserve",JSON.stringify(smove));
+	location.reload();
+}
 
-// }
