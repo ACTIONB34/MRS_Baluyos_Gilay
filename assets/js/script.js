@@ -1,5 +1,8 @@
 //check if script has loaded
 console.log("Script is loaded.");
+console.log(movie);
+
+var movie = [];
 
 // now showing movies
 var movies = [
@@ -153,36 +156,99 @@ var movies = [
 if(document.getElementById("nowshowing") != null){
 	for (var i = 0;i < movies.length; i++) {
 		document.getElementById("nowshowing").innerHTML +=	"<div class=\"col-lg-4 col-md-6 portfolio-item " + movies[i].cinema + "\">" +
-																"<a onclick=\"selectMovie('" + movies[i].title + "')\" class=\"details-link\" title=\"Reserve\">" +
+																"<a onclick=\"showMovie('" + movies[i].title + "')\" class=\"details-link\" data-toggle=\"modal\" data-target=\"#myModal2\">" +
 																	"<img src=\"" + movies[i].image + "\" class=\"img-fluid box\" alt=\"" + movies[i].title + "\"> </a> " +
 																"<div class=\"portfolio-info\">" +
 																	"<h4>" + movies[i].title+ "</h4>" +
+																	"<p> Directed by: " + movies[i].director + 
+																	"<p> Starring: " + movies[i].starring + 
+																	"</p>" +
 																"</div>" +
 															"</div>"
 	};
 }
-
-function selectMovie(title, director, date, time, synopsis) {
+// href=\"movie-details.html\"
+function showMovie(title) {
 	console.log("Movie selected!" + title);
 
 	for (var i = 0;i < movies.length; i++) {
 		if( title === movies[i].title) {
-			document.getElementById("movie").innerHTML ="<h4>Movie Details</h4>" +
-														"Movie Selected: <strong>" + movies[i].title + "</strong><br>" +
-														"Director: <strong>" + movies[i].director + "</strong> <br>" +
-														"Starring: <strong>" + movies[i].starring + "</strong> <br>" +
-														"Date: <strong>" + movies[i].showDate + "</strong> <br>" +
-														"Time: <strong>" + movies[i].time + "</strong> <br>" +
-														"Synopsis: <strong>" + movies[i].synopsis + "</strong> <br><br>" +
-															
-														"<a href=\"seat-selection.html\">" +
-															"<button class=\"confirm-btn vertical-center\" id=\"thisMovie('" + movies[i].title + "')\">" +
-																"Proceed to Seat Selection </button>" +
-														"</a>";
+			var movie = {
+				title: 		movies[i].title,
+				director: 	movies[i].director,
+				starring: 	movies[i].starring,
+				showDate: 	movies[i].showDate,
+				time: 		movies[i].time,
+				cinema: 	movies[i].cinema,
+				price: 		movies[i].price,
+				synopsis: 	movies[i].synopsis,
+				rating: 	movies[i].rating,
+				image: 		movies[i].image
+			}
+
+			console.log(movie);
+
+ 			document.getElementById("showingdetails").innerHTML =
+
+
+															"<div class=\"modal fade\" id=\"myModal2\" role=\"dialog\">" +
+																"<div class=\"modal-dialog\">" +
+																														   
+																	"<div class=\"modal-content\">" +
+																		"<div class=\"modal-header\">" +
+																			"<h4 class=\"modal-title\">"+ movie.title + "</h4>" +
+																			"<button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>" +
+																		"</div>" +
+
+																		"<div class=\"modal-body\">" +
+																			"<p>" +
+																				"<strong>Directed by</strong>: " + movie.director + "<br>" +
+																				"<strong>Starring</strong>: " + movie.starring + "<br>" +
+																				"<strong>Date</strong>: " + movie.showDate + "<br>" +
+																				"<strong>Time</strong>: " + movie.time + "<br>" +
+																				"<strong>Synopsis</strong>: " + movie.synopsis + "<br>" +
+																				"<strong>Rating</strong>: " + movie.rating + "<br>" +
+																			"</p>" +
+																		"</div>" +
+																	   
+																		"<div class=\"modal-footer\">" +
+																			"<a href=\"seat-selection.html\">" +
+																				"<button class=\"confirm-btn vertical-center\" id=\"thisMovie('" + movie.title + "')\">" +
+																					"Proceed</button>" +
+																			"</a>" +
+																			"<button type=\"button\" class=\"confirm-btn\" data-dismiss=\"modal\">Close</button>" +
+																		"</div>" +
+																	"</div>"+
+																  
+																"</div>" +
+														  "</div>";
 		}
+
+
 	}
 
+
+	// document.getElementById("selectedMovieImage").innerHTML = "<img src=\"" + movie.image + "\">";
+
+	// document.getElementById("selectedMovieDetails").innerHTML = "<h2>Onwards</h2> "+
+	// 																	"<ul>" +
+	// 																		"<li><strong>Directed by</strong>:" + movie.director + "</li>" +
+	// 																		"<li><strong>Starring</strong>:" + movie.starring + "</li>" +
+	// 																		"<li><strong>Date</strong>:" + movie.showDate + "</li>" +
+	// 																		"<li><strong>Time</strong>:" + movie.time + "</li>" +
+	// 																		"<li><strong>Synopsis</strong>:" + movie.synopsis + "</li>" +
+	// 																		"<li><strong>Rating</strong>:" + movie.rating + "</li>" +
+	// 																	"</ul>" +
+
+	// 																	"<a href=\"seat-selection.html\">" +
+	// 																		"<button class=\"confirm-btn vertical-center\" id=\"thisMovie('" + movie.title + "')\">" +
+	// 																			"Proceed to Seat Selection </button>" +
+	// 																	"</a>";
+
+
 }
+
+
 
 // next picture data
 var nextpicture = [
@@ -271,9 +337,7 @@ if(document.getElementById("soon") != null){
 // 		{
 // 			id: ++(reservations.length),
 // 			dateBooked: document.getElementById("thisMovie").value,
-// 			movie: document.getElementById().value,
-// 			cinema: document.getElementById().value,
-// 			time: document.getElementById().value,
+// 			movieID: document.getElementById().value,
 // 			ticket: document.getElementById().value,
 // 			seatNumber: document.getElementById().value,
 // 			status: document.getElementById().value
