@@ -2270,6 +2270,11 @@ input[type=checkbox]:before {
     background-size: cover;
 }
 
+input[type=checkbox]:disabled:before {
+  opacity: 0.5;
+  background-size: cover;
+}
+
 input[type=checkbox]:checked:before {
     background-image: url('../img/movie_seat_green.png');
     background-size: cover;
