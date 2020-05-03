@@ -15,7 +15,7 @@ function populateReservationTable(
 			"<td>" +
 				"<div class=\"social-links text-center text-md-right pt-3 pt-md-0\">" +
 				"<a href=\"checkout.html?index=" + ticketNo + "\" class=\"linkedin\"><i class=\"icofont-look\"></i></a>" +
-				"<a href=\"#\" onClick=\"removeReservations(" + ticketNo + ",\'reservations.html\')  class=\"linkedin\"><i class=\"icofont-ui-delete\"></i></a>" +
+				"<a href=\"#\" onClick=\"removeReservations(\'" + ticketNo + "\',\'reservations.html\')\" class=\"linkedin\"><i class=\"icofont-ui-delete\"></i></a>" +
 				"</div>" +
 			"</td>" +
 			"<td>" +

@@ -60,6 +60,7 @@ function getReservations() {
 }
 
 function removeReservations(ix, url) {
+	console.log(ix+ " is removed!");
 	setReservations(getReservations().filter((_, i) => i != ix));
 	if (url) {
 		window.location.href = url;

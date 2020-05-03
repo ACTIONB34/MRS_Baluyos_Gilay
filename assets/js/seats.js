@@ -33,10 +33,11 @@ $(document).ready(function () {
 			seat.charAt(1),
 			!availablity
 		);
+
 		updateTicketInfo(
 			"#ticketinfo",
 			reservation.getSelectedSeats().length,
-			reservation.getSelectedSeats().join(","),
+			reservation.getSelectedSeats().join(", "),
 			reservation.getSelectedSeats().length * reservation.movie.price
 		);
 	});
