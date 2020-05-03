@@ -21,7 +21,7 @@ $(document).ready(function () {
         ...movie,
       });
       window.location.href =
-        "checkout.html?index=" + getReservations().length - 1;
+        "checkout.html?index=" + (getReservations().length - 1);
     }
   });
 
