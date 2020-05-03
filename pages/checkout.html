@@ -76,27 +76,27 @@
 				<article class="entry entry-single" data-aos="fade-up">
 					<div class="row">
 						<div class="col-lg-3">
-							<img src="../assets/img/coming/onward.webp" alt="Movie Poster" class="img-fluid image-center">
+							<img id="poster" src="" alt="Movie Poster" class="img-fluid image-center">
 						</div>
 						<div class="col-lg-9">
 							<div class="entry-img">
 								<img src="assets/img/blog-1.jpg" alt="" class="img-fluid">
 							</div>
 							Ticket #001
-							<h3> Onwards</h3>
+							<h3 id="title"> Onwards</h3>
 							<hr>
 
 							<div class="entry-meta">                               
-								<i class="icofont-user"></i> <a href="#" disabled="disabled">Tom Holland, Chris Pratt, Octavia Spencer, Julia Louis-Dreyfus</a><br>
-								<i class="icofont-wall-clock"></i> <a href="#" disabled="disabled"> <time datetime="2020-01-01">120 minutes</time> </a><br>
-								<i class="icofont-movie"></i> <a href="#" disabled="disabled">Dan Scanlon</a>                                
+								<i class="icofont-user"></i> <a id="casts" href="#" disabled="disabled"></a><br>
+								<i class="icofont-wall-clock"></i> <a id="time" href="#" disabled="disabled"> <time datetime="2020-01-01">120 minutes</time> </a><br>
+								<i class="icofont-movie"></i> <a id="director" href="#" disabled="disabled">Dan Scanlon</a>                                
 							</div>
 
 							<div class="entry-content">
 								<div class="row">
 									<div class="col-lg-4">
 										<p>
-											<h5> Date and Time </h5> April 26, 2020 12:30 PM
+											<h5> Date and Time </h5><label id="dtime"></label>
 										</p>
 
 										<p>
@@ -105,11 +105,11 @@
 									</div>
 									<div class="col-lg-4">
 										<p>
-											<h5> Seats </h5> A1, A2, A3, A4, B1, B2, B3, B4
+											<h5> Seats </h5> <label id="seats"></label>
 
 										</p>
 										<p>
-											<h5> Total </h5> P 800.00
+											<h5> Total </h5>  <label id="total"></label>
 										</p>
 
 									</div>
@@ -185,8 +185,10 @@
 	<script src="../assets/vendor/aos/aos.js"></script>
 
 	<!-- Template Main JS File -->
+    <script src="../assets/js/storage.js"></script>
 	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/script.js"></script>
+	<script src="../assets/js/checkout.js"></script>
 
 </body>
 
