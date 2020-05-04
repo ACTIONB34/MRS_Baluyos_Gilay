@@ -4,6 +4,7 @@ $(document).ready(function() {
 	let reservation = new Reservation(movie, getSeats(), []);
 
 	updateTicketInfo("#ticketinfo", 0, 0, 0);
+
 	$("#seatsBlock").append(
 		populateViewSeats(reservation.getSeats(), movie.title)
 	);
@@ -21,6 +22,9 @@ $(document).ready(function() {
 			});
 			window.location.href =
 				"checkout.html?index=" + (getReservations().length - 1);
+		}else{
+			$("#confirm_modal .modal-body").text("You have not selected any seats.");
+			$("#confirm_modal .modal-footer").hide();
 		}
 	});
 
