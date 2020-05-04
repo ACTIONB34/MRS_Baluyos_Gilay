@@ -199,6 +199,7 @@ function showSchedules(schedules) {
     "      <th>Schedule</th>" +
     "      <th>Cinema</th>" +
     "      <th>Price</th>" +
+    "      <th>Seats</th>" +
     "      <th></th>" +
     "    </tr>" +
     "  </thead>";
@@ -208,12 +209,21 @@ function showSchedules(schedules) {
     thead +
     "<tbody>" +
     schedules.reduce((acc, schedule, index) => {
+      let reservations = getReservationsByScheduleId(schedule.id);
+      const MAX_SEATS = 72;
+      let seatsTaken = reservations.reduce((acc, reservation, index) => {
+        let seats = reservation.ticketInfo.seats.split(",");
+        acc += seats.length;
+        return acc;
+      }, 0);
+
       acc += "<tr>";
       acc += "<td>" + (index + 1) + "</td>";
       acc += "<td>" + schedule.date + "</td>";
       acc += "<td>" + schedule.timeRange + "</td>";
       acc += "<td>" + schedule.cinema + "</td>";
       acc += "<td>P" + schedule.price + "</td>";
+      acc += "<td>" + seatsTaken + "/" + MAX_SEATS + "</td>";
       acc +=
         '<td><a href="seat-selection.html?index=' +
         schedule.id +

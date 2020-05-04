@@ -52,7 +52,7 @@ $(document).ready(function () {
 function isSeatTaken(seat, scheduleId) {
   let reservations = getReservations();
   reservations = reservations.filter(
-    (item) => item.scheduleInfo.id === scheduleId
+    (item) => item.scheduleInfo.id == scheduleId
   );
   if (reservations.length > 0) {
     reservations = reservations.filter(
@@ -84,7 +84,7 @@ function populateViewSeats(seats, scheduleId) {
       }
     });
     table += "</tr>";
-    if ((index + 1) % 4 == 0) {
+    if ((index + 1) % 3 == 0) {
       table += '<tr class="seatVGap"></tr>';
     }
   });
@@ -110,6 +110,8 @@ function updateTicketInfo(
       "<strong>Total:</strong> P " +
       total +
       "<br> <br>" +
-      '<button  class="confirm-btn block" data-toggle="modal" data-target="#confirm_modal">Proceed</button>'
+      (noOfseats > 0
+        ? '<button  class="confirm-btn block" data-toggle="modal" data-target="#confirm_modal" >Proceed</button>'
+        : "")
   );
 }

@@ -1,11 +1,10 @@
-const cols = ["A", "B", "C", "D", "F", "G", "H", "I"];
+const cols = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
 const rows = Array.from(Array(8), (e, i) => i + 1);
 
 let populateSeats = (cols, rows) => {
   let seats = {};
   cols.map((col) => {
     seats[col] = {};
-
     rows.map((row) => {
       seats[col][row] = { isAvailable: true };
     });
@@ -62,6 +61,17 @@ function _addReservation(reservation) {
 function getReservations() {
   if (!localStorage.getItem("reservations")) setReservations([]);
   return JSON.parse(localStorage.getItem("reservations"));
+}
+
+function getReservationsByScheduleId(id) {
+  if (!localStorage.getItem("reservations")) {
+    setReservations([]);
+    return null;
+  }
+
+  return JSON.parse(localStorage.getItem("reservations")).filter(
+    (re) => re.scheduleInfo.id == id
+  );
 }
 
 function removeReservations(ix, url) {
