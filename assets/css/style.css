@@ -22,7 +22,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Muli", sans-serif;
 }
 
@@ -133,7 +138,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header .logo h1 a, #header .logo h1 a:hover {
+#header .logo h1 a,
+#header .logo h1 a:hover {
   color: #2b2320;
   text-decoration: none;
 }
@@ -148,7 +154,8 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.nav-menu, .nav-menu * {
+.nav-menu,
+.nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -175,7 +182,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
   color: #f03c02;
   text-decoration: none;
 }
@@ -213,7 +222,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #581601;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
   color: #f03c02;
 }
 
@@ -310,7 +321,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
   color: #f03c02;
   text-decoration: none;
 }
@@ -401,8 +414,8 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(28, 23, 21, 0.7);
   padding: 20px;
   color: #fff;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   border-top: 5px solid #f03c02;
   margin-bottom: 60px;
 }
@@ -462,11 +475,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate3d(0, 0, 0);
 }
 
-#hero .carousel-control-prev, #hero .carousel-control-next {
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
   width: 10%;
 }
 
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
   background: none;
   font-size: 48px;
   line-height: 1;
@@ -482,7 +497,8 @@ h1, h2, h3, h4, h5, h6 {
   #hero .carousel-content {
     width: 60%;
   }
-  #hero .carousel-control-prev, #hero .carousel-control-next {
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
     width: 5%;
   }
 }
@@ -686,7 +702,8 @@ section {
   border-radius: 50px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #fff;
   background: #f03c02;
 }
@@ -724,7 +741,8 @@ section {
   margin-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
@@ -732,7 +750,8 @@ section {
   color: #483b36;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #f03c02;
 }
 
@@ -965,7 +984,7 @@ section {
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: .9s;
+  transition: 0.9s;
   background-color: #f03c02;
 }
 
@@ -1117,7 +1136,11 @@ section {
   box-shadow: none;
 }
 
-.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na {
+.pricing .featured h3,
+.pricing .featured h4,
+.pricing .featured h4 span,
+.pricing .featured ul,
+.pricing .featured ul .na {
   color: #fff;
 }
 
@@ -1204,7 +1227,8 @@ section {
   margin: 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #fecfc0;
   font-size: 26px;
 }
@@ -1331,7 +1355,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1389,7 +1414,8 @@ section {
   margin-bottom: 40px;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -1562,7 +1588,7 @@ section {
 }
 
 .blog .entry .entry-content blockquote::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1796,13 +1822,15 @@ section {
   display: inline-block;
 }
 
-.blog .blog-pagination li.active, .blog .blog-pagination li:hover {
+.blog .blog-pagination li.active,
+.blog .blog-pagination li:hover {
   background: #f03c02;
   border: 1px solid #f03c02;
   border-radius: 4px;
 }
 
-.blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
+.blog .blog-pagination li.active a,
+.blog .blog-pagination li:hover a {
   color: #fff;
 }
 
@@ -2153,77 +2181,78 @@ New Styles--------------------------*/
 }
 
 .smallBox::before {
-  content:".";
-  width:15px;
-  height:15px;
-  float:left;
-  margin-right:10px;
+  content: ".";
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 10px;
 }
 
 .greenBox::before {
-  content:"";
-  background:Green;
+  content: "";
+  background: Green;
 }
 
 .redBox::before {
-  content:"";
-  background:Red;
+  content: "";
+  background: Red;
 }
 
 .emptyBox::before {
-  content="";
-  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-    background-color:#ccc;
+  content: "";
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+  background-color: #ccc;
 }
 
 /*seats*/
 
 .table-seats {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 5px;
-    /*padding-right: 50px;*/
+  display: table;
+  border-collapse: separate;
+  border-spacing: 5px;
+  /*padding-right: 50px;*/
 }
 .seats {
-    width: 40px;
-    font-weight: 600;
-    font-size: 15px;
-    padding-top: 7px;
-    height: 24px;
+  width: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 7px;
+  height: 24px;
 }
 
 .seatVGap {
-  height:40px;
+  height: 40px;
 }
 
 table {
-  text-align:center;
+  text-align: center;
 }
 
-input[type=checkbox] {
-    width:0px;
-    margin-right:18px;
+input[type="checkbox"] {
+  width: 0px;
+  margin-right: 18px;
 }
 
-input[type=checkbox]:before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    vertical-align:middle;
-    text-align: center;
-    background-image: url('../img/movie_seat.png');
-    background-size: cover;
+input[type="checkbox"]:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-image: url("../img/movie_seat.png");
+  background-size: cover;
 }
 
-input[type=checkbox]:disabled:before {
+input[type="checkbox"]:disabled:before {
   opacity: 0.5;
   background-size: cover;
 }
 
-input[type=checkbox]:checked:before {
-    background-image: url('../img/movie_seat_green.png');
-    background-size: cover;
+input[type="checkbox"]:checked:before {
+  background-image: url("../img/movie_seat_green.png");
+  background-size: cover;
 }
 
 .img-center {
@@ -2232,13 +2261,13 @@ input[type=checkbox]:checked:before {
   width: 100%;
 }
 
-#services .icon-box .img-fluid{
+#services .icon-box .img-fluid {
   max-width: 100%;
   height: 350px;
 }
 
 .box {
-   object-fit: cover;
+  object-fit: cover;
   height: 450px;
   width: 100%;
 }
@@ -2252,15 +2281,12 @@ input[type=checkbox]:checked:before {
   bottom: 10px;
 }
 
-
 /* Reservation Page*/
 #reserve-flters {
   padding: 0;
   margin: 0 auto 10px auto;
   list-style: none;
-
 }
-
 
 #reserve-flters li {
   cursor: pointer;
@@ -2275,7 +2301,8 @@ input[type=checkbox]:checked:before {
   border-radius: 50px;
 }
 
-#reserve-flters li:hover, #reserve-flters li.filter-active {
+#reserve-flters li:hover,
+#reserve-flters li.filter-active {
   color: #fff;
   background: #f03c02;
 }
@@ -2285,5 +2312,5 @@ input[type=checkbox]:checked:before {
 }
 
 .withpadding {
-  padding:  5px;
+  padding: 5px;
 }

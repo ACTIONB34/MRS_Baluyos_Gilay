@@ -1,8 +1,9 @@
 class Reservation {
-  constructor(movie, seats, seatsSelected) {
+  constructor(movie, seats, schedule, seatsSelected) {
     this.init();
     this._movie = movie;
     this._seats = seats;
+    this._schedule = schedule;
     this._seatsSelected = seatsSelected;
   }
 
@@ -49,5 +50,13 @@ class Reservation {
 
   set movie(movie) {
     this._movie = movie;
+  }
+
+  get schedule() {
+    return this._schedule;
+  }
+
+  set schedule(schedule) {
+    this._schedule = schedule;
   }
 }
