@@ -17,8 +17,8 @@ function populateReservationTable(
 					'<a href="#" onClick="removeReservations(\'' + ticketNo + '\',\'reservations.html\')" class="linkedin"><i class="icofont-ui-delete"></i></a>' +
 				"</div>" +
 			"</td>" +
-			"<td>" + ticketNo +
-			"</td>" +
+			// "<td>" + ticketNo +
+			// "</td>" +
 			"<td>" + DateBooked +
 			"</td>" +
 			"<td>" + Movie +

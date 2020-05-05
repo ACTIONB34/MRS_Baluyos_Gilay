@@ -87,112 +87,140 @@ function removeReservations(ix, url) {
 let schedules_seed = [
 	{
 		movieID: 0,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 1,
 		price: 300,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 0,
-		timeRange: "12:30PM - 01:30PM",
+		timeRange: "8:00 PM",
 		cinema: 1,
 		price: 300,
 		date: "04-30-2020"
 	},
 	{
 		movieID: 0,
-		timeRange: "02:00PM - 3:00PM",
+		timeRange: "8:00 PM",
 		cinema: 1,
 		price: 250,
 		date: "04-30-2020"
 	},
 	{
 		movieID: 1,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 2,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 1,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 2,
 		price: 250,
 		date: "04-30-2020"
 	},
 	{
 		movieID: 1,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 2,
 		price: 250,
 		date: "04-31-2020"
 	},
 	{
 		movieID: 2,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 3,
-		price: 200,
+		price: 250,
 		date: "04-29-2020"
+	},
+	{
+		movieID: 2,
+		timeRange: "8:00 PM",
+		cinema: 3,
+		price: 250,
+		date: "04-30-2020"
+	},
+	{
+		movieID: 2,
+		timeRange: "8:00 PM",
+		cinema: 3,
+		price: 250,
+		date: "05-01-2020"
 	},
 	{
 		movieID: 3,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 4,
-		price: 500,
-		date: "04-29-2020"
+		price: 250,
+		date: "04-28-2020"
+	},
+	{
+		movieID: 3,
+		timeRange: "8:00 PM",
+		cinema: 4,
+		price: 250,
+		date: "05-01-2020"
+	},
+	{
+		movieID: 3,
+		timeRange: "8:00 PM",
+		cinema: 4,
+		price: 250,
+		date: "05-02-2020"
 	},
 	{
 		movieID: 4,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 1,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 5,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 2,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 6,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 3,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 7,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 4,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 8,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 1,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 9,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 2,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 10,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 3,
 		price: 250,
 		date: "04-29-2020"
 	},
 	{
 		movieID: 11,
-		timeRange: "11:00AM - 12:00PM",
+		timeRange: "8:00 PM",
 		cinema: 4,
 		price: 250,
 		date: "04-29-2020"
