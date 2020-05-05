@@ -235,11 +235,11 @@ var nextpicture = [{
 if (document.getElementById("soon") != null) {
 	for (var i = 0; i < nextpicture.length; i++) {
 		document.getElementById("soon").innerHTML +=
-			"<div class=\"col-lg-3 col-md-6\">" +	
+			"<div class=\"col-lg-3 col-md-6\">" +
 				"<div class=\"icon-box\">" +
 					"<img src=\"" + nextpicture[i].image + "\" class=\"img-fluid\" alt=\"" + nextpicture[i].title + "\"> " +
 					"<div class=\"withpadding\">" +
-						"<h5 class=\"title\">" +
+						"<h5 class="title">" +
 							nextpicture[i].title +
 						"</h5> " +
 						"<p class=\"description\"> Directed by: " + nextpicture[i].director +
