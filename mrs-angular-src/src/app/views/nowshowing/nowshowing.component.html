@@ -1,0 +1,68 @@
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Movies</h2>
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li>Now Showing</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End Breadcrumbs -->
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2><strong>Now Showing</strong></h2>
+        <!-- <label for="moviedate">Movies available for: </label>
+      <input type="date" name="date" value="2020-04-25">
+      <input class="confirm-btn" type="button" value="Confirm" onclick="msg()"> -->
+        <p>Select movie to see details</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".1">Cinema 1</li>
+            <li data-filter=".2">Cinema 2</li>
+            <li data-filter=".3">Cinema 3</li>
+            <li data-filter=".4">Cinema 4</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- movies here -->
+      <div class="row portfolio-container" id="nowshowing">
+        <div
+          *ngFor="let movie of movies | async"
+          [ngClass]="['col-lg-4 col-md-6 portfolio-item', movie.cinema]"
+        >
+          <a class="details-link" data-toggle="modal" data-target="#myModal2">
+            <img
+              [src]="movie.image"
+              class="img-fluid box"
+              [alt]="movie.title"
+            />
+          </a>
+          <div class="portfolio-info">
+            <h4>
+              {{ movie.title }}
+            </h4>
+            <p>Directed by: {{ movie.director }}</p>
+
+            <p>Starring: {{ movie.starring }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" id="showingdetails"></div>
+
+      <div class="container"></div>
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+</main>
