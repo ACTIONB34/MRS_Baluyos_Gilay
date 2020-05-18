@@ -1,0 +1,37 @@
+<table *ngIf="schedules" class="table" table-hover>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Schedule</th>
+      <th>Cinema</th>
+      <th>Price</th>
+      <th>Seats Available</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let schedule of schedules; index as i">
+      <td>{{ i + 1 }}</td>
+
+      <td>{{ schedule.date }}</td>
+
+      <td>{{ schedule.timeRange }}</td>
+
+      <td>{{ schedule.cinema }}</td>
+
+      <td>{{ schedule.price | currency }}</td>
+
+      <td>seatsTaken / "72"</td>
+
+      <td>
+        <a href="seat-selection.html?index=' + schedule.id + '">
+          <button class="confirm-btn" id="">
+            Select
+          </button></a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>

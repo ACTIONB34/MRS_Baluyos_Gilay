@@ -38,7 +38,7 @@
       <!-- movies here -->
       <div class="row portfolio-container" id="nowshowing">
         <div
-          *ngFor="let movie of movies | async"
+          *ngFor="let movie of movies"
           [ngClass]="['col-lg-4 col-md-6 portfolio-item', movie.cinema]"
         >
           <a
@@ -90,9 +90,8 @@
                   <strong>Rating</strong>: {{ selectedMovie.rating }} <br />
                 </p>
               </div>
-
+              <app-schedules [movie]="selectedMovie"></app-schedules>
               <div class="modal-footer" center>
-                <!-- showSchedules(schedules)  -->
                 <button type="button" class="confirm-btn" data-dismiss="modal">
                   Close
                 </button>

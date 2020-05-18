@@ -10,6 +10,7 @@ import { AboutComponent } from './views/about/about.component';
 import { NowshowingComponent } from './views/nowshowing/nowshowing.component';
 import { ReservationsComponent } from './views/reservations/reservations.component';
 import { MoviesService } from './services/movies.service';
+import { SchedulesComponent } from './components/schedules/schedules.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MoviesService } from './services/movies.service';
     AboutComponent,
     NowshowingComponent,
     ReservationsComponent,
+    SchedulesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule],
   providers: [MoviesService],

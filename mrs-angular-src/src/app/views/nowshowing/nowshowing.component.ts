@@ -8,11 +8,17 @@ import { MoviesService } from 'src/app/services/movies.service';
 })
 export class NowshowingComponent implements OnInit {
   movies: any = [];
+  schedules: any = [];
   selectedMovie;
   constructor(private _movies: MoviesService) {}
 
   ngOnInit(): void {
-    this.movies = this._movies.getMovies();
+    this._movies.getMovies().subscribe((res) => {
+      this.movies = res;
+      this.movies.map((m, i) => {
+        m.id = i;
+      });
+    });
   }
 
   showMovie(movie) {
