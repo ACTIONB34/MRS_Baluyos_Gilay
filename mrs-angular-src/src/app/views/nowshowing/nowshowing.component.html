@@ -41,7 +41,12 @@
           *ngFor="let movie of movies | async"
           [ngClass]="['col-lg-4 col-md-6 portfolio-item', movie.cinema]"
         >
-          <a class="details-link" data-toggle="modal" data-target="#myModal2">
+          <a
+            class="details-link"
+            data-toggle="modal"
+            data-target="#myModal2"
+            (click)="showMovie(movie)"
+          >
             <img
               [src]="movie.image"
               class="img-fluid box"
@@ -59,7 +64,43 @@
         </div>
       </div>
 
-      <div class="row portfolio-container" id="showingdetails"></div>
+      <div
+        *ngIf="selectedMovie"
+        class="row portfolio-container"
+        id="showingdetails"
+      >
+        <div class="modal fade" id="myModal2" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="movieTitle">
+                  {{ selectedMovie.title }}
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <p>
+                  <strong>Directed by</strong>: {{ selectedMovie.director }}
+                  <br />
+                  <strong>Starring</strong>: {{ selectedMovie.starring }} <br />
+                  <strong>Synopsis</strong>: {{ selectedMovie.synopsis }} <br />
+                  <strong>Rating</strong>: {{ selectedMovie.rating }} <br />
+                </p>
+              </div>
+
+              <div class="modal-footer" center>
+                <!-- showSchedules(schedules)  -->
+                <button type="button" class="confirm-btn" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="container"></div>
     </div>

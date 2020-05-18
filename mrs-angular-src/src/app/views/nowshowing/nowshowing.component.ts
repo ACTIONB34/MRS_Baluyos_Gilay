@@ -8,9 +8,14 @@ import { MoviesService } from 'src/app/services/movies.service';
 })
 export class NowshowingComponent implements OnInit {
   movies: any = [];
+  selectedMovie;
   constructor(private _movies: MoviesService) {}
 
   ngOnInit(): void {
     this.movies = this._movies.getMovies();
+  }
+
+  showMovie(movie) {
+    this.selectedMovie = movie;
   }
 }
