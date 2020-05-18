@@ -12,11 +12,6 @@ export class SchedulesComponent implements OnChanges {
   constructor(private schedulesService: SchedulesService) {}
 
   ngOnChanges(): void {
-    this.schedulesService.getSchedules().subscribe((res) => {
-      let tSchedules: any = res;
-      this.schedules = tSchedules.filter(
-        (schedule) => schedule['movieID'] == this.movie.id
-      );
-    });
+    this.schedules = this.schedulesService.getSchedulesById(this.movie.id);
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from 'src/app/services/movies.service';
+import { SchedulesService } from 'src/app/services/schedules.service';
 
 @Component({
   selector: 'app-nowshowing',
@@ -10,7 +11,10 @@ export class NowshowingComponent implements OnInit {
   movies: any = [];
   schedules: any = [];
   selectedMovie;
-  constructor(private _movies: MoviesService) {}
+  constructor(
+    private _movies: MoviesService,
+    private _schedules: SchedulesService
+  ) {}
 
   ngOnInit(): void {
     this._movies.getMovies().subscribe((res) => {
